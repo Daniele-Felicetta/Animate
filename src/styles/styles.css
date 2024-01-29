@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 94, 0);
+  border-radius: 20px ;
+}
+.box1, .box2{
+  cursor: pointer;
+}
