@@ -2,12 +2,25 @@
   box-sizing: border-box;
 }
 
-.box{
-  width: 100px;
-  height: 100px;
+.box , .simpleBox{
+  width: 150px;
+  height: 150px;
   background-color: rgb(255, 94, 0);
   border-radius: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+  margin: 0 0 30px 0;
 }
 .box1, .box2{
   cursor: pointer;
+}
+button{
+  background-color: bisque;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 5px;
 }

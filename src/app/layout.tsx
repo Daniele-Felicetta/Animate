@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import CustomStyle from "@components/CustomStyle"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="fixed w-[95%] flex justify-between mx-8 mr-16">
+          <ul className="m-4 flex gap-10 font-semibold">
+            <li className="text-purple-900">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="text-orange-700">
+              <Link href="/gg">Game</Link>
+            </li>
+            <li className="text-yellow-500">
+              <Link href="/simpleControl">Simple Control</Link>
+            </li>
+          </ul>
+          <CustomStyle></CustomStyle>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
